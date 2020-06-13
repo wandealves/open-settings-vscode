@@ -1563,9 +1563,7 @@
   // The command line arguments to use when on the Linux terminal. [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).
   "terminal.integrated.shellArgs.linux": [],
   // The command line arguments to use when on the macOS terminal. [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).
-  "terminal.integrated.shellArgs.osx": [
-    "-l"
-  ],
+  "terminal.integrated.shellArgs.osx": ["-l"],
   // The command line arguments to use when on the Windows terminal. [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).
   "terminal.integrated.shellArgs.windows": [],
   // Controls whether to show the alert "The terminal process terminated with exit code" when exit code is non-zero.
@@ -1743,9 +1741,7 @@
   },
   // Configure editor settings to be overridden for [git-commit] language.
   "[git-commit]": {
-    "editor.rulers": [
-      72
-    ]
+    "editor.rulers": [72]
   },
   // Configure editor settings to be overridden for [go] language.
   "[go]": {
@@ -1808,9 +1804,7 @@
   "remote.downloadExtensionsLocally": false,
   // Override the kind of an extension. `ui` extensions are installed and run on the local machine while `workspace` extensions are run on the remote. By overriding an extension's default kind using this setting, you specify if that extension should be installed and enabled locally or remotely.
   "remote.extensionKind": {
-    "pub.name": [
-      "ui"
-    ]
+    "pub.name": ["ui"]
   },
   // Automatically attach node debugger when node.js was launched in debug mode from integrated terminal.
   //  - disabled: Auto attach is disabled and not shown in status bar.
@@ -1820,9 +1814,7 @@
   // Controls whether to show a warning when the 'useWSL' attribute is used.
   "debug.node.showUseWslIsDeprecatedWarning": true,
   // An array of languages where Emmet abbreviations should not be expanded.
-  "emmet.excludeLanguages": [
-    "markdown"
-  ],
+  "emmet.excludeLanguages": ["markdown"],
   // Path to a folder containing Emmet profiles and snippets.
   "emmet.extensionsPath": null,
   // Enable Emmet abbreviations in languages that are not supported by default. Add a mapping here between the language and emmet supported language.
@@ -2121,9 +2113,7 @@
   // Whether to automatically open DevTools at the start of a debug session.
   "dart.openDevTools": "never",
   // When to automatically switch focus to the test list (array to support multiple values).
-  "dart.openTestView": [
-    "testRunStart"
-  ],
+  "dart.openTestView": ["testRunStart"],
   // Whether to register Pub Build Runner tasks with VS Code.
   "dart.previewBuildRunnerTasks": false,
   // Whether to enable the debuggers 'Step Back' functionality. This is behind a flag while VS Code does not support enabling it separately to the 'Reverse Continue' button.
@@ -2227,7 +2217,8 @@
   // Traces the communication between VSCode and the eslint linter service.
   "eslint.trace.server": "off",
   // An array of language ids which should be validated by ESLint. If not installed ESLint will show an error.
-  "eslint.validate": [{
+  "eslint.validate": [
+    {
       "language": "javascript",
       "autoFix": true
     },
@@ -2312,11 +2303,7 @@
   // Specifies whether to highlight lines associated with the current line
   "gitlens.blame.highlight.enabled": true,
   // Specifies where the associated line highlights will be shown
-  "gitlens.blame.highlight.locations": [
-    "gutter",
-    "line",
-    "overview"
-  ],
+  "gitlens.blame.highlight.locations": ["gutter", "line", "overview"],
   // Specifies whether to ignore whitespace when comparing revisions during blame operations
   "gitlens.blame.ignoreWhitespace": false,
   // Specifies whether gutter blame annotations will be separated by a small gap
@@ -2354,88 +2341,60 @@
   // Specifies whether to provide a _recent change_ code lens, showing the author and date of the most recent commit for the file or code block
   "gitlens.codeLens.recentChange.enabled": true,
   // Specifies where Git code lens will be shown in the document
-  "gitlens.codeLens.scopes": [
-    "document",
-    "containers"
-  ],
+  "gitlens.codeLens.scopes": ["document", "containers"],
   // Specifies where Git code lens will be shown in the document for the specified languages
-  "gitlens.codeLens.scopesByLanguage": [{
+  "gitlens.codeLens.scopesByLanguage": [
+    {
       "language": "azure-pipelines",
-      "scopes": [
-        "document"
-      ]
+      "scopes": ["document"]
     },
     {
       "language": "ansible",
-      "scopes": [
-        "document"
-      ]
+      "scopes": ["document"]
     },
     {
       "language": "css",
-      "scopes": [
-        "document"
-      ]
+      "scopes": ["document"]
     },
     {
       "language": "html",
-      "scopes": [
-        "document"
-      ]
+      "scopes": ["document"]
     },
     {
       "language": "json",
-      "scopes": [
-        "document"
-      ]
+      "scopes": ["document"]
     },
     {
       "language": "jsonc",
-      "scopes": [
-        "document"
-      ]
+      "scopes": ["document"]
     },
     {
       "language": "less",
-      "scopes": [
-        "document"
-      ]
+      "scopes": ["document"]
     },
     {
       "language": "postcss",
-      "scopes": [
-        "document"
-      ]
+      "scopes": ["document"]
     },
     {
       "language": "python",
-      "symbolScopes": [
-        "!Module"
-      ]
+      "symbolScopes": ["!Module"]
     },
     {
       "language": "scss",
-      "scopes": [
-        "document"
-      ]
+      "scopes": ["document"]
     },
     {
       "language": "stylus",
-      "scopes": [
-        "document"
-      ]
+      "scopes": ["document"]
     },
     {
       "language": "vue",
-      "scopes": [
-        "document"
-      ]
+      "scopes": ["document"]
     },
     {
       "language": "yaml",
-      "scopes": [
-        "document"
-      ]
+      "scopes": ["document"]
     }
   ],
   // Specifies a set of document symbols where Git code lens will or will not be shown in the document. Prefix with `!` to avoid providing a Git code lens for the symbol. Must be a member of `SymbolKind`
@@ -2610,11 +2569,7 @@
   //  - debug: Logs all errors, warnings, and messages with extra context useful for debugging
   "gitlens.outputLevel": "errors",
   // Specifies where the highlights of the recently changed lines will be shown
-  "gitlens.recentChanges.highlight.locations": [
-    "gutter",
-    "line",
-    "overview"
-  ],
+  "gitlens.recentChanges.highlight.locations": ["gutter", "line", "overview"],
   // Specifies how the recently changed lines annotations will be toggled
   //  - file: Toggles each file individually
   //  - window: Toggles the window, i.e. all files at once
@@ -2980,9 +2935,7 @@
   // Controls if plugin is enabled
   "color-highlight.enable": true,
   // An array of language ids which should be higlighted by Color Highlight. "*" to trigger on any language; Prepend language id with "!" to exclude the language (i.e "!typescript", "!javascript")
-  "color-highlight.languages": [
-    "*"
-  ],
+  "color-highlight.languages": ["*"],
   // Style of the highlight. Can be 'dot-before', 'dot-after', 'foreground', 'background', 'outline', 'underline'
   "color-highlight.markerType": "background",
   // Highlight colors on the ruler (scroll bar), true/false
@@ -3002,7 +2955,19 @@
   //  - none: No icon pack enabled.
   "material-icon-theme.activeIconPack": "angular",
   // Set custom file icon associations.
-  "material-icon-theme.files.associations": {},
+  "material-icon-theme.files.associations": {
+    "infra": "app",
+    "entities": "class",
+    "schemas": "class",
+    "typeorm": "database",
+    "repositories": "mappings",
+    "http": "container",
+    "migrations": "tools",
+    "modules": "components",
+    "implementations": "core",
+    "dtos": "typescript",
+    "fakes": "mock"
+  },
   // Set custom folder icon associations.
   "material-icon-theme.folders.associations": {},
   // Change the color of the folder icons.
@@ -3026,19 +2991,21 @@
   "material-icon-theme.showUpdateMessage": false,
   // Show the welcome message after first installation.
   "material-icon-theme.showWelcomeMessage": true,
-  "mssql.connections": [{
-    "server": "192.168.1.102",
-    "database": "TodoDB",
-    "authenticationType": "SqlLogin",
-    "user": "sa",
-    "password": "",
-    "emptyPasswordInput": false,
-    "savePassword": true
-  }],
+  "mssql.connections": [
+    {
+      "server": "192.168.1.102",
+      "database": "TodoDB",
+      "authenticationType": "SqlLogin",
+      "user": "sa",
+      "password": "",
+      "emptyPasswordInput": false,
+      "savePassword": true
+    }
+  ],
   "workbench.colorTheme": "One Dark Pro",
   "[javascript]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true,
+      "source.fixAll.eslint": true
     }
   },
   "[javascriptreact]": {
@@ -3057,3 +3024,4 @@
     }
   }
 }
+
