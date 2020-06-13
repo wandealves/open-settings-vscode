@@ -2956,6 +2956,11 @@
   "material-icon-theme.activeIconPack": "angular",
   // Set custom file icon associations.
   "material-icon-theme.files.associations": {
+    "ormconfig.json": "database",
+    "tsconfig.json": "tune"
+  },
+  // Set custom folder icon associations.
+  "material-icon-theme.folders.associations": {
     "infra": "app",
     "entities": "class",
     "schemas": "class",
@@ -2968,8 +2973,6 @@
     "dtos": "typescript",
     "fakes": "mock"
   },
-  // Set custom folder icon associations.
-  "material-icon-theme.folders.associations": {},
   // Change the color of the folder icons.
   "material-icon-theme.folders.color": "#90a4ae",
   // Set the type for the folder icons.
